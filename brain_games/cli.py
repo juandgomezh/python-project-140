@@ -1,8 +1,8 @@
-import random # nosec
-
+import random  # nosec
 import prompt
 
 INTENTS = 3
+
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
@@ -10,14 +10,15 @@ def welcome_user():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-    
+
 
 def is_even_condition(number):
     return number % 2 == 0
 
 
 def validate_answer():
-    number = random.randint(1, 100) # nosec
+    number = random.randint(1, 100)  # nosec
+    # Make sure that using this pseudorandom number generator is safe here.
     correct = "yes" if is_even_condition(number) else "no"
     return number, correct
 
