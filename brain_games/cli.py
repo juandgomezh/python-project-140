@@ -1,4 +1,4 @@
-import random  # nosec
+import secrets
 
 import prompt
 
@@ -18,7 +18,7 @@ def is_even_condition(number):
 
 
 def validate_answer():
-    number = random.randint(1, 100)  # nosec
+    number = secrets.randbelow(100) + 1
     correct = "yes" if is_even_condition(number) else "no"
     return number, correct
 
