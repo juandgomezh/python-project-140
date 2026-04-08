@@ -1,14 +1,17 @@
-import prompt
 import random
+
+import prompt
 
 INTENTS = 3
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+
 
 def welcome_user():
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
     
+
 def is_even_condition(number):
     return number % 2 == 0
 
