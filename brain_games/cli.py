@@ -1,4 +1,5 @@
 import random  # nosec
+
 import prompt
 
 INTENTS = 3
@@ -39,7 +40,7 @@ def game(desc, validate_answer):
         user = prompt.string("Your answer: ")
 
         if user != correct:
-            print(f"'{user}' is wrong answer ;(. Correct answer was '{correct}'.")
+            print(f"'{user}' is wrong answer ;(. Correct answer was '{correct}'.")  # noqa: E501
             print(f"Let's try again, {name}!")
             return
 
