@@ -27,6 +27,7 @@ def game(desc, validate_answer):
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
     print(desc)
+    print()
 
     correct_answers = 0
 
@@ -37,8 +38,7 @@ def game(desc, validate_answer):
         user = prompt.string("Your answer: ")
 
         if user != correct:
-            print(f"'{user}' is wrong answer ;(.")
-            print(f"Correct answer was '{correct}'.")
+            print(f"'{user}' is wrong answer ;(. Correct answer was '{correct}'.")
             print(f"Let's try again, {name}!")
             return
 
