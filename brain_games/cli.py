@@ -17,7 +17,7 @@ def is_even_condition(number):
 
 
 def validate_answer():
-    number = random.randint(1, 100)
+    number = random.randint(1, 100) # nosec
     correct = "yes" if is_even_condition(number) else "no"
     return number, correct
 
