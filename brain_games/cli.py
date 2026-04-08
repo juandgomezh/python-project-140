@@ -19,7 +19,6 @@ def is_even_condition(number):
 
 def validate_answer():
     number = random.randint(1, 100)  # nosec
-    # Make sure that using this pseudorandom number generator is safe here.
     correct = "yes" if is_even_condition(number) else "no"
     return number, correct
 
