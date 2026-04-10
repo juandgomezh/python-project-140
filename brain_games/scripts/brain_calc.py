@@ -1,5 +1,5 @@
-from brain_games.calculator import DESCRIPTION, validate_answer
-from brain_games.matches.calculator import play
+from brain_games.calculator_helpers import DESCRIPTION, validate_answer
+from brain_games.matches.calc import play
 
 
 def main():
