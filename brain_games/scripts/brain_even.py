@@ -1,11 +1,12 @@
-from brain_games.cli import DESCRIPTION, game, validate_answer
+from brain_games.even import DESCRIPTION, validate_answer
+from brain_games.matches.even_odd import play
 
 
 def main():
     try:
-        game(DESCRIPTION, validate_answer)
+        play(DESCRIPTION, validate_answer)
     except KeyboardInterrupt:
-        print("\nExit the game...")
+        print("\nExit the even game...")
 
 
 if __name__ == "__main__":
