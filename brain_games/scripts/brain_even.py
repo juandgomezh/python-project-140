@@ -1,4 +1,4 @@
-from brain_games.games.even import play, DESCRIPTION, validate_answer
+from brain_games.games.even import DESCRIPTION, play, validate_answer
 
 
 def main():

@@ -1,9 +1,11 @@
-import prompt
 import random
+
+import prompt
 
 DESCRIPTION = 'What is the result of the expression?'
 OPERATIONS = ['+', '-', '*']
 ROUNDS = 3
+
 
 def create_operation():
     first_operand = random.randint(1, 50)
@@ -21,8 +23,10 @@ def create_operation():
 
     return operation, str(result)
 
+
 def test():
     return 'test'
+
 
 def play(desc, create_answer):
     print("Welcome to the Brain Games!")
@@ -39,7 +43,11 @@ def play(desc, create_answer):
         if correct == answer:
             print("Correct!")
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct}'.")
+            message = (
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct}'."
+            )
+            print(message)
             print(f"Let's try again, {name}!")
             return
 
