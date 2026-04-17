@@ -1,5 +1,5 @@
 from brain_games.even_helpers import DESCRIPTION, validate_answer
-from brain_games.matches.even import play
+from brain_games.games.even import play
 
 
 def main():
