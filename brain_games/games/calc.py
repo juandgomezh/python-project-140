@@ -1,4 +1,4 @@
-import random
+import secrets
 
 import prompt
 
@@ -8,9 +8,9 @@ ROUNDS = 3
 
 
 def create_operation():
-    first_operand = random.randint(1, 50)
-    second_operand = random.randint(1, 50)
-    operator = random.choice(OPERATIONS)
+    first_operand = secrets.randbelow(50) + 1
+    second_operand = secrets.randbelow(50) + 1
+    operator = secrets.choice(OPERATIONS) # nosec
 
     operation = f"{first_operand} {operator} {second_operand}"
 

@@ -1,5 +1,5 @@
 import math
-import random
+import secrets
 
 import prompt
 
@@ -40,8 +40,8 @@ def play(logic):
 
     while correct_answers < ROUNDS:
     
-        first_number = random.randint(1, 100) # nosec
-        second_number = random.randint(1, 100) # nosec
+        first_number = secrets.randbelow(100) + 1
+        second_number = secrets.randbelow(100) + 1
         print(QUESTION_TEXT, first_number, second_number)
         user_answer = prompt.string(ANSWER_INTRO_TEXT)
         result, condition = logic(user_answer, first_number, second_number)
