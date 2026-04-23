@@ -40,13 +40,13 @@ def play(logic):
 
     while correct_answers < ROUNDS:
     
-        first_number = random.randint(1, 100)
-        second_number = random.randint(1, 100)
+        first_number = random.randint(1, 100) # nosec
+        second_number = random.randint(1, 100) # nosec
         print(QUESTION_TEXT, first_number, second_number)
         user_answer = prompt.string(ANSWER_INTRO_TEXT)
         result, condition = logic(user_answer, first_number, second_number)
-        print('debug: ', result)
-        print('condition: ', condition)
+        #print('debug: ', result)
+        #print('condition: ', condition)
         
         if 'no' == condition:
             print(f"'{user_answer}' {END_ERROR_TEXT} '{result}'.")  # noqa: E501
