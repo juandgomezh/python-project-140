@@ -45,8 +45,8 @@ def play(logic):
         print(QUESTION_TEXT, first_number, second_number)
         user_answer = prompt.string(ANSWER_INTRO_TEXT)
         result, condition = logic(user_answer, first_number, second_number)
-        #print('debug: ', result)
-        #print('condition: ', condition)
+        # print('debug: ', result)
+        # print('condition: ', condition)
         
         if 'no' == condition:
             print(f"'{user_answer}' {END_ERROR_TEXT} '{result}'.")  # noqa: E501

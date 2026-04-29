@@ -10,7 +10,7 @@ ROUNDS = 3
 def create_operation():
     first_operand = secrets.randbelow(50) + 1
     second_operand = secrets.randbelow(50) + 1
-    operator = secrets.choice(OPERATIONS) # nosec
+    operator = secrets.choice(OPERATIONS)  # nosec
 
     operation = f"{first_operand} {operator} {second_operand}"
 
