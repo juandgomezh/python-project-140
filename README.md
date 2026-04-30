@@ -12,6 +12,9 @@
 ### 🧮 Progression Game
 [![GCD Game](https://asciinema.org/a/ZSzlyF5dIRQ65t8W)](https://asciinema.org/a/ZSzlyF5dIRQ65t8W)
 
+### 🧮 Prime Game
+[![GCD Game](https://asciinema.org/a/fNz8GpLdHKqgMNLg)](https://asciinema.org/a/fNz8GpLdHKqgMNLg)
+
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=juandgomezh_python-project-140&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=juandgomezh_python-project-140)
 
 ### Hexlet tests and linter status:
