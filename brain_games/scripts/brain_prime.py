@@ -1,9 +1,10 @@
-from brain_games.games.prime import play
+from brain_games.core import play
+from brain_games.games.prime import DESCRIPTION, get_round_data
 
 
 def main():
     try:
-        play()
+        play(DESCRIPTION, get_round_data)
     except KeyboardInterrupt:
         print("\nExit the prime game...")
 
