@@ -1,4 +1,9 @@
-## 🧠 Brain Games
+# 🧠 Brain Games
+
+[![Hexlet tests and linter status](https://github.com/juandgomezh/python-project-140/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/juandgomezh/python-project-140/actions)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=juandgomezh_python-project-140&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=juandgomezh_python-project-140)
+
+## 📌 Descripción del proyecto
 
 Brain Games es una colección de juegos de consola desarrollados en Python que ponen a prueba habilidades básicas de lógica y razonamiento matemático.
 
@@ -19,6 +24,22 @@ El objetivo del proyecto es practicar buenas prácticas de desarrollo en Python,
 - Uso de interfaces simples
 - Desarrollo de aplicaciones CLI instalables
 
+---
+
+## 📦 Requisitos mínimos
+
+- Python >= 3.10
+- uv (gestor de paquetes)
+
+---
+
+## 🚀 Instalación
+
+Instalar el paquete globalmente:
+
+```bash
+uv tool install .
+
 ## Games
 
 ### Even Game
@@ -35,10 +56,3 @@ El objetivo del proyecto es practicar buenas prácticas de desarrollo en Python,
 
 ### Prime Game
 [![Prime Game](https://asciinema.org/a/fNz8GpLdHKqgMNLg.svg)](https://asciinema.org/a/fNz8GpLdHKqgMNLg)
-
----
-
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/juandgomezh/python-project-140/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/juandgomezh/python-project-140/actions)
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=juandgomezh_python-project-140&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=juandgomezh_python-project-140)
