@@ -1,3 +1,24 @@
+## 🧠 Brain Games
+
+Brain Games es una colección de juegos de consola desarrollados en Python que ponen a prueba habilidades básicas de lógica y razonamiento matemático.
+
+El proyecto está diseñado con una arquitectura modular, donde cada juego implementa su propia lógica mientras un motor central se encarga de la ejecución del flujo del juego, la interacción con el usuario y la validación de respuestas.
+
+Incluye los siguientes juegos:
+
+- Determinar si un número es par
+- Resolver operaciones aritméticas simples
+- Encontrar el máximo común divisor (MCD)
+- Completar progresiones numéricas
+- Identificar números primos
+
+El objetivo del proyecto es practicar buenas prácticas de desarrollo en Python, incluyendo:
+
+- Separación de responsabilidades
+- Diseño modular de paquetes
+- Uso de interfaces simples
+- Desarrollo de aplicaciones CLI instalables
+
 ## Games
 
 ### Even Game
