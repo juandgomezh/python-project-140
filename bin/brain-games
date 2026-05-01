@@ -1,3 +1,6 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env python3
 
-puts "Welcome to the Brain Games!"
+from brain_games.scripts.brain_even import main
+
+if __name__ == "__main__":
+    main()
