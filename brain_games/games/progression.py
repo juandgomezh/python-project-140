@@ -1,4 +1,4 @@
-import random
+import secrets
 
 DESCRIPTION = "What number is missing in the progression?"
 WELCOME_TEXT = 'Welcome to the Brain Games!'
@@ -16,15 +16,15 @@ ROUNDS = 3
 
 
 def generate_progression(size=10):
-    init = random.randint(1, 20)
-    step = random.randint(2, 10)
+    init = secrets.randbelow(20) + 1
+    step = secrets.randbelow(9) + 2
 
     progresion = [init + i * step for i in range(size)]
     return progresion
 
 
 def hide_number(progression):
-    idx = random.randint(0, len(progression) - 1)
+    idx = secrets.randbelow(len(progression))
     correct = progression[idx]
 
     open_progression = progression.copy()

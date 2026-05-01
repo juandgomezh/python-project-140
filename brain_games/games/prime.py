@@ -1,4 +1,4 @@
-import random
+import secrets
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 WELCOME_TEXT = "Welcome to the Brain Games!"
@@ -31,7 +31,7 @@ def is_prime(number: int) -> bool:
 
 
 def generate_question():
-    number = random.randint(1, 100)
+    number = secrets.randbelow(100) + 1
     correct_answer = "yes" if is_prime(number) else "no"
     return number, correct_answer
 
