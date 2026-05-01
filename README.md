@@ -39,6 +39,7 @@ Instalar el paquete globalmente:
 
 ```bash
 uv tool install .
+```
 
 ## Games
 
