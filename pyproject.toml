@@ -1,6 +1,8 @@
 [project]
 name = "hexlet-code"
-author = "Juan David Gómez"
+authors = [
+    { name = "Juan Gomez", email = "juandgomezh@outlook.com" }
+]
 version = "0.1.0"
 description = "Proyecto de práctica N1"
 readme = "README.md"
