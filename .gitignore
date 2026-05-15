@@ -1,31 +1,18 @@
-/*FILES*/
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
-.venv/
-venv/
-env/
-ENV/
-uv.lock
-dist/
-build/
-*.egg-info/
-.vscode/
-.idea/
-*.swp
-*.swo
-.DS_Store
-Thumbs.db
-*.log
-*.cast
-*.tmp
-*.bak
-
+# archvos de Python y cache
 __pycache__/
 *.pyc
+*.pyo
+
+# entornos virtuales
+.venv/
+venv/
+
+# Cache de herramientas
+.ruff_cache/
+.qlty/
+
+# archivos del sistema operativo de desarrollo
 .DS_Store
+
+# archivos del editor de código
+.vscode/
