@@ -1,13 +1,19 @@
-import secrets
+import random
 
-DESCRIPTION = "What is the result of the expression?"
-OPERATIONS = ["+", "-", "*"]
+from brain_games.constants import GAMES_CONSTANTS
 
 
-def get_round_data():
-    first = secrets.randbelow(50) + 1
-    second = secrets.randbelow(50) + 1
-    operator = secrets.choice(OPERATIONS)
+def get_round_data() -> tuple[str, str]:
+    # se extraen las constantes y se usa la funcion de math.random
+    first = random.randint(
+        GAMES_CONSTANTS["ALL"]["MIN_NUMBER"],
+        GAMES_CONSTANTS["CALC"]["MAX_NUMBER"],
+    )  # nosec B311
+    second = random.randint(
+        GAMES_CONSTANTS["ALL"]["MIN_NUMBER"],
+        GAMES_CONSTANTS["CALC"]["MAX_NUMBER"],
+    )  # nosec B311
+    operator = operator = random.choice(GAMES_CONSTANTS["CALC"]["OPERATIONS"])  # nosec B311
 
     question = f"{first} {operator} {second}"
 

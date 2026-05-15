@@ -1,10 +1,11 @@
+from brain_games.constants import GAMES_CONSTANTS
 from brain_games.core import play
-from brain_games.games.calc import DESCRIPTION, get_round_data
+from brain_games.games.calc import get_round_data
 
-    
-def main():
+
+def main() -> None:
     try:
-        play(DESCRIPTION, get_round_data)
+        play(GAMES_CONSTANTS["CALC"]["DESCRIPTION"], get_round_data)
     except KeyboardInterrupt:
         print("\nExit the calc game...")
 

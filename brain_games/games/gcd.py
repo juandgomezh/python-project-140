@@ -1,12 +1,18 @@
 import math
-import secrets
+import random
 
-DESCRIPTION = "Find the greatest common divisor of given numbers."
+from brain_games.constants import GAMES_CONSTANTS
 
 
-def get_round_data():
-    a = secrets.randbelow(100) + 1
-    b = secrets.randbelow(100) + 1
+def get_round_data() -> tuple[str, str]:
+    a = random.randint(
+        GAMES_CONSTANTS["ALL"]["MIN_NUMBER"],
+        GAMES_CONSTANTS["GCD"]["MAX_NUMBER"],
+    )  # nosec B311
+    b = random.randint(
+        GAMES_CONSTANTS["ALL"]["MIN_NUMBER"],
+        GAMES_CONSTANTS["GCD"]["MAX_NUMBER"],
+    )  # nosec B311
 
     question = f"{a} {b}"
     correct = str(math.gcd(a, b))

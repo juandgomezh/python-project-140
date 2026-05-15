@@ -1,20 +1,29 @@
-import secrets
+import random
 
-DESCRIPTION = "What number is missing in the progression?"
+from brain_games.constants import GAMES_CONSTANTS
 
 
-def get_round_data():
-    size = 10
-    start = secrets.randbelow(20) + 1
-    step = secrets.randbelow(9) + 2
+def get_round_data() -> tuple[str, str]:
+    size = GAMES_CONSTANTS["PROGRESSION"]["PROGRESSION_SIZE"]
+    start = random.randint(
+        GAMES_CONSTANTS["ALL"]["MIN_NUMBER"],
+        GAMES_CONSTANTS["PROGRESSION"]["MAX_NUMBER"],
+    )  # nosec B311
 
-    progression = [start + i * step for i in range(size)]
+    step = random.randint(
+        GAMES_CONSTANTS["PROGRESSION"]["MIN_STEP_NUMBER"],
+        GAMES_CONSTANTS["PROGRESSION"]["MAX_STEP_NUMBER"],
+    )  # nosec B311
 
-    index = secrets.randbelow(len(progression))
-    correct = progression[index]
+    progression_list = [start + i * step for i in range(size)]
 
-    progression[index] = ".."
+    index = random.randint(
+        GAMES_CONSTANTS["ALL"]["MIN_NUMBER"], len(progression_list) - 1
+    )  # nosec B311
+    correct = progression_list[index]
 
-    question = " ".join(map(str, progression))
+    progression_list[index] = ".."
+
+    question = " ".join(map(str, progression_list))
 
     return question, str(correct)

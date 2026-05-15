@@ -1,5 +1,6 @@
 [project]
 name = "hexlet-code"
+author = "Juan David Gómez"
 version = "0.1.0"
 description = "Proyecto de práctica N1"
 readme = "README.md"
