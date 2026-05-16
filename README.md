@@ -1,7 +1,7 @@
 # 🧠 Brain Games
 
 [![Hexlet tests and linter status](https://github.com/juandgomezh/python-project-140/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/juandgomezh/python-project-140/actions)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=juandgomezh_python-project-140&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=juandgomezh_python-project-140)
+[![Maintainability](https://qlty.sh/gh/juandgomezh/projects/python-project-140/maintainability.svg)](https://qlty.sh/gh/juandgomezh/projects/python-project-140)
 
 ## 📌 Descripción del proyecto
 
@@ -16,6 +16,7 @@ Está diseñado con una arquitectura modular, donde cada juego contiene una lóg
 La finalidad...
 
 El objetivo de este proyecto es comenzar con el aprendizaje de un lenguaje como Python, el cual es bastante útil para cualquier desarrollador de software, de una manera didáctica y amigable, usando conceptos básicos como estructuras de datos simples, funciones y lógica matemática.
+
 ---
 
 ## 📦 Requisitos mínimos
@@ -35,17 +36,17 @@ uv tool install .
 
 ## Games
 
-### Even Game
+### Juego "es par"
 [![Even Game](https://asciinema.org/a/naDjd1AIQC8Js5rN.svg)](https://asciinema.org/a/naDjd1AIQC8Js5rN)
 
-### Calculator Game
+### Juego "calculadora básica"
 [![Calculator Game](https://asciinema.org/a/7jj0bswfnKxEGZDW.svg)](https://asciinema.org/a/7jj0bswfnKxEGZDW)
 
-### GCD Game
+### Juego "máximo común divisor"
 [![GCD Game](https://asciinema.org/a/Ihvof5dLGOOhdzm5.svg)](https://asciinema.org/a/Ihvof5dLGOOhdzm5)
 
-### Progression Game
+### Juego "progresiones básicas"
 [![Progression Game](https://asciinema.org/a/ZSzlyF5dIRQ65t8W.svg)](https://asciinema.org/a/ZSzlyF5dIRQ65t8W)
 
-### Prime Game
+### Juego "es primo"
 [![Prime Game](https://asciinema.org/a/fNz8GpLdHKqgMNLg.svg)](https://asciinema.org/a/fNz8GpLdHKqgMNLg)
